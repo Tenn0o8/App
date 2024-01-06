@@ -1,6 +1,7 @@
 import paho.mqtt.client as mqtt
+from Server.settings import MQTT_SERVER
 
-broker_address = "192.168.1.103"
+broker_address = MQTT_SERVER
 broker_port = 1883
 condition_topic = "CONDITION/#"  
 
