@@ -37,7 +37,7 @@ def on_message(client,userdata,msg):
       content_list = list(map(float,content.split('/')))
       device_id = device_topic[1]
 
-      if len(content_list) == 9:
+      if len(content_list) == 10:
         payload = {
           'device': device_id,
           'gyroR': content_list[0],
